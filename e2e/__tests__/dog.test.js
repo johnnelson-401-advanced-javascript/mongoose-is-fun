@@ -1,4 +1,4 @@
-const Dog = require('../../lib/models/dogs');
+const Dog = require('../../lib/models/dog');
 // eslint-disable-next-line no-unused-vars
 const mongoose = require('mongoose');
 
