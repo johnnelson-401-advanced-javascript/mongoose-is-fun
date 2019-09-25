@@ -2,7 +2,7 @@ require('dotenv').config();
 require('./lib/connect')();
 const express = require('express');
 const app = express();
-const Dog = require('./lib/models/dog');
+const Dog = require('./lib/models/dogs');
 
 app.use(express.json());
 
@@ -50,4 +50,4 @@ app.delete('/api/dogs/:id', (req, res, next) => {
     .catch(next);
 });
 
-app.listen(3000, () => console.log('server running on 3000'));
+app.listen(3001, () => console.log('server running on 3001'));
