@@ -50,4 +50,4 @@ app.delete('/api/dogs/:id', (req, res, next) => {
     .catch(next);
 });
 
-app.listen(3001, () => console.log('server running on 3001'));
+app.listen(3000, () => console.log('server running on 3000'));
