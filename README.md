@@ -4,6 +4,7 @@
 Mongoose is Fun
 
 ### Author: Student/Group Name
+John Nelson
 
 ### Links and Resources
 * [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/1)
@@ -17,7 +18,7 @@ Mongoose is Fun
 ### Setup
 #### `.env` requirements
 * `PORT` - 3000
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `MONGODB_URI` - mongodb://heroku_4rfjczz1:ped1fdk3mt2njmhgcka7pofvn1@ds147902.mlab.com:47902/heroku_4rfjczz1
 
 **or, include an `.env.example`**
 
