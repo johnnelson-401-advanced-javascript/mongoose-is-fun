@@ -7,8 +7,8 @@ Mongoose is Fun
 John Nelson
 
 ### Links and Resources
-* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/1)
-* [travis](https://travis-ci.com/johnnelson-401-advanced-javascript/mongoose-is-fun/builds/129186214)
+* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/2)
+* [travis](https://travis-ci.com/johnnelson-401-advanced-javascript/mongoose-is-fun/builds/129196001)
 
 
 #### Documentation
