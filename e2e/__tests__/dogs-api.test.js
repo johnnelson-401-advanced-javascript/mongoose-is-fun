@@ -103,6 +103,14 @@ describe(' dogs api routing test', ()=> {
         expect(body.hasPuppies).toBe(0);
       });
   });
-	//delete doggos
+
+  it('deletes a dogoo', () => {
+    return postDoggo(pongo)
+      .then(dog => {
+        return request
+          .delete(`/api/dogs/${dog._id}`)
+          .expect(200);
+      });
+  });
 	
 });
