@@ -58,5 +58,21 @@ describe('dog model', () => {
     const { errors } = dog.validateSync();
     expect(errors.hasPuppies.kind).toBe('max');
   });
-	// Test ENUM
+  // Test ENUM
+  it('enforces enum on the media category', ()=> {
+    const data = {
+      name: 'Pongo',
+      appearances: {
+        breed: 'dalmatian',
+        mainColor: 'white with black spots' 
+      },
+      hasPuppies: 101,
+      isGoodDog: true,
+      media: ['rumors'],
+      yearIntroduced: 1996,
+    };
+    const dog = new Dog(data);
+    const { errors } = dog.validateSync();
+    expect(errors['media.0'].kind).toBe('enum');
+  });
 });
