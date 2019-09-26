@@ -46,8 +46,63 @@ describe(' dogs api routing test', ()=> {
           });
       });
   });
-	//list of doggos
-	//update doggos
+  it('gets a list of doggos', ()=> {
+    return Promise.all([
+      postDoggo({
+        name: 'Pongo',
+        appearances: {
+          breed: 'dalmatian',
+          mainColor: 'white with black spots' 
+        },
+        hasPuppies: 101,
+        isGoodDog: true,
+        media: ['movies'],
+        yearIntroduced: 1996,
+      }),
+      postDoggo({
+        name: 'Perdy',
+        appearances: {
+          breed: 'dalmatian',
+          mainColor: 'white with black spots' 
+        },
+        hasPuppies: 101,
+        isGoodDog: true,
+        media: ['movies'],
+        yearIntroduced: 1996,
+      }),
+      postDoggo({
+        name: 'Spot',
+        appearances: {
+          breed: 'dalmatian',
+          mainColor: 'white with black spots' 
+        },
+        hasPuppies: 101,
+        isGoodDog: true,
+        media: ['movies'],
+        yearIntroduced: 1996,
+      })])
+      .then(() => {
+        return request
+          .get('/api/dogs')
+          .expect(200);
+      })
+      .then(({ body }) => {
+        expect(body.length).toBe(3);
+      });
+  });
+  it('updates a dogoo', ()=> {
+    return postDoggo(pongo)
+      .then(dog => {
+        dog.hasPuppies = 0;
+        return request
+          .put(`/api/dogs/${dog._id}`)
+          .send(dog)
+          .expect(200);
+      })
+      .then(({ body }) => {
+        expect(body.hasPuppies).toBe(0);
+      });
+  });
 	//delete doggos
 	
 });
