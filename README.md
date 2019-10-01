@@ -4,10 +4,11 @@
 Mongoose is Fun
 
 ### Author: Student/Group Name
+John Nelson
 
 ### Links and Resources
-* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/1)
-* [travis](https://travis-ci.com/johnnelson-401-advanced-javascript/mongoose-is-fun/builds/129186214)
+* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/4)
+* [travis](https://travis-ci.com/johnnelson-401-advanced-javascript/mongoose-is-fun/builds/129196001)
 
 
 #### Documentation
@@ -17,7 +18,7 @@ Mongoose is Fun
 ### Setup
 #### `.env` requirements
 * `PORT` - 3000
-* `MONGODB_URI` - URL to the running mongo instance/db
+* `MONGODB_URI` - mongodb://heroku_4rfjczz1:ped1fdk3mt2njmhgcka7pofvn1@ds147902.mlab.com:47902/heroku_4rfjczz1
 
 **or, include an `.env.example`**
 
@@ -43,6 +44,20 @@ Mongoose is Fun
 * dogs-api.test  
   Tests the API routes and CRUD functionality of Dogs.
 
-#### UML
-Link to an image of the UML for your application and response to events
+#### POSTMAN Screenshots
+* Get Route  
+![getRoute](/lib/assets/get.png)  
+
+* Post  
+![post](/lib/assets/post.png)  
+
+* Get By ID route  
+![getById](/lib/assets/getbyid.png)  
+
+* Put Route  
+![putRoute](/lib/assets/put.png)
+
+* Delete Route  
+![deleteRoute](/lib/assets/delete.png)
+
 
