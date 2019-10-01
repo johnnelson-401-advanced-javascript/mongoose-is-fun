@@ -7,7 +7,7 @@ Mongoose is Fun
 John Nelson
 
 ### Links and Resources
-* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/3)
+* [submission PR](https://github.com/johnnelson-401-advanced-javascript/mongoose-is-fun/pull/4)
 * [travis](https://travis-ci.com/johnnelson-401-advanced-javascript/mongoose-is-fun/builds/129196001)
 
 
@@ -44,6 +44,20 @@ John Nelson
 * dogs-api.test  
   Tests the API routes and CRUD functionality of Dogs.
 
-#### UML
-Link to an image of the UML for your application and response to events
+#### POSTMAN Screenshots
+* Get Route  
+![getRoute](/lib/assets/get.png)  
+
+* Post  
+![post](/lib/assets/post.png)  
+
+* Get By ID route  
+![getById](/lib/assets/getbyid.png)  
+
+* Put Route  
+![putRoute](/lib/assets/put.png)
+
+* Delete Route  
+![deleteRoute](/lib/assets/delete.png)
+
 
